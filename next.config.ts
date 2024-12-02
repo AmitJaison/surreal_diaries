@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ['surreal-diaries.vercel.app'],
+  },
+  // other config options here
 };
 
 export default nextConfig;
