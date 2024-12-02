@@ -2,7 +2,13 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['surreal-diaries.vercel.app'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'surreal-diaries.vercel.app',
+        pathname: '/**',
+      },
+    ],
   },
   // other config options here
 };
