@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from 'next/link';
 
 const trips = [
-  { src: "/home/flower.jpg", alt: "Trip 1", title: "Exploring the Desert", description: "A soulful journey through Rajasthan's majestic landscapes." },
+  { src: "/home/flower.jpg", alt: "Trip 1", title: "Exploring the Desert", description: "A soulful journey through Rajasthan&apos;s majestic landscapes." },
   { src: "/home/scene.jpg", alt: "Trip 2", title: "4 States 4 Days", description: "An unforgettable journey through enchanting landscapes." },
   { src: "/home/vala.jpg", alt: "Trip 3", title: "Unveiling the Hills", description: "Discovering the hidden charms of Kodaikanal." },
 ];
