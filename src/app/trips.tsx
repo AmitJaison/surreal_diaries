@@ -1,4 +1,4 @@
-// pages/trips.tsx
+// src/app/trips.tsx
 import Image from "next/image";
 import Link from 'next/link';
 

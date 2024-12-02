@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const photos = [
   { src: "/home/flower.jpg", alt: "Photo 1" },
@@ -14,13 +14,12 @@ export default function Home() {
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-2xl font-bold">Surreal Diaries</div>
           <nav className="flex space-x-6">
-        <a href="#" className="hover:text-gray-400">Stories</a>
-        <a href="#" className="hover:text-gray-400">Collections</a>
-        <Link to="./trips" className="hover:text-gray-400">Trips</Link>
-        {/* <a href="#" className="hover:text-gray-400">Contact</a> */}
+            <a href="#" className="hover:text-gray-400">Stories</a>
+            <a href="#" className="hover:text-gray-400">Collections</a>
+            <Link href="/trips" className="hover:text-gray-400">Trips</Link>
           </nav>
           <button className="bg-white text-black px-7 py-2 rounded-full hover:bg-gray-200">
-        My Story
+            My Story
           </button>
         </div>
       </header>
@@ -37,13 +36,8 @@ export default function Home() {
           </span>
         </h1>
         <p className="text-lg mb-8">
-        Feel the stories that each photograph brings to life.
+          Feel the stories that each photograph brings to life.
         </p>
-        <div className="flex space-x-4">
-          <button className="bg-transparent border border-white px-6 py-3 rounded-full hover:bg-gray-800">
-            Explore
-          </button>
-        </div>
       </main>
       <section className="flex flex-col items-center space-y-8 p-8">
         {photos.map((photo, index) => (
