@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const photos = [
   { src: "/home/flower.jpg", alt: "Photo 1" },
