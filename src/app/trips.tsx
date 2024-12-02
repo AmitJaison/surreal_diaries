@@ -1,5 +1,6 @@
 // pages/trips.tsx
 import Image from "next/image";
+import Link from 'next/link';
 
 const trips = [
   { src: "/home/trip1.jpg", alt: "Trip 1" },
@@ -14,8 +15,8 @@ export default function Trips() {
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-2xl font-bold">Surreal Diaries</div>
           <nav className="flex space-x-6">
-            <a href="/" className="hover:text-gray-400">Home</a>
-            <a href="/trips" className="hover:text-gray-400">Trips</a>
+            <Link href="/" className="hover:text-gray-400">Home</Link>
+            <Link href="/trips" className="hover:text-gray-400">Trips</Link>
           </nav>
           <button className="bg-white text-black px-7 py-2 rounded-full hover:bg-gray-200">
             My Story
