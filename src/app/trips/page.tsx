@@ -43,7 +43,7 @@ export default function Trips() {
               <h2 className="text-xl font-bold mb-2">{trip.title}</h2>
               <p className="text-gray-400 mb-4">{trip.description}</p>
               <button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">
-                Let's Travel
+                Let&apos;s Travel
               </button>
             </div>
           ))}
