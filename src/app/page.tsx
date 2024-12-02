@@ -30,7 +30,7 @@ export default function Home() {
         </div>
         <h1 className="text-5xl font-bold mb-4">
           <span className="block bg-gradient-to-r from-gray-300 via-gray-500 to-gray-700 bg-clip-text text-transparent">
-            Unveiling life's beauty through my personal
+            Unveiling life&aposs beauty through my personal
           </span>
           <span className="block bg-gradient-to-r from-gray-700 via-gray-500 to-gray-300 bg-clip-text text-transparent">
             collection of stories and frames.
