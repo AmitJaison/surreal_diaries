@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from 'next/link';
 import { useState } from 'react';
@@ -39,9 +41,9 @@ export default function Home() {
           <span className="bg-black-100 px-3 py-1 border border-gray-700 rounded-full z-50">Welcome to my visual diary.</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-bold mb-4">
-          <span className="block bg-gradient-to-r from-gray-300 via-gray-500 to-gray-700 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-gray-300 via-gray-500 to-gray-700 bg-clip-text text-transparent">
             Unveiling life&apos;s beauty through my personal
-          </span>
+            </span>
           <span className="block bg-gradient-to-r from-gray-700 via-gray-500 to-gray-300 bg-clip-text text-transparent">
             collection of stories and frames.
           </span>
