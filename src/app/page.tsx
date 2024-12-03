@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const photos = [
-  { src: "/home/flower.jpg", alt: "Photo 1" },
+  { src: "https://i.ibb.co/fvYFhCQ/flower.jpg", alt: "Photo 1" },
   { src: "/home/scene.jpg", alt: "Photo 2" },
   { src: "/home/vala.jpg", alt: "Photo 3" },
 ];
