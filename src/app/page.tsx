@@ -8,8 +8,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const photos = [
   { src: "https://images.pexels.com/photos/20035182/pexels-photo-20035182.jpeg", alt: "Munroe Islands by Amit Jaison from Pexels" },
   { src: "https://images.pexels.com/photos/20035179/pexels-photo-20035179.jpeg", alt: "Photo by Amit Jaison from Pexels" },
-  { src: "/home/scene.jpg", alt: "Photo 2" },
-  { src: "/home/vala.jpg", alt: "Photo 3" },
+  { src: "https://images.pexels.com/photos/20035184/pexels-photo-20035184.jpeg", alt: "The Raviz Hotel in Kerala in India by Amit Jaison from Pexels" },
+  
 ];
 
 export default function Home() {

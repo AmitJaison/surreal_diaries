@@ -8,20 +8,20 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const trips = [
   {
-    src: "/home/flower.jpg",
+    src: "https://images.pexels.com/photos/20035182/pexels-photo-20035182.jpeg",
     alt: "Trip 1",
     title: "Exploring the Desert",
     description:
       "A soulful journey through Rajasthan&apos;s majestic landscapes.",
   },
   {
-    src: "/home/scene.jpg",
+    src: "https://images.pexels.com/photos/20035179/pexels-photo-20035179.jpeg",
     alt: "Trip 2",
     title: "4 States 4 Days",
     description: "An unforgettable journey through enchanting landscapes.",
   },
   {
-    src: "/home/vala.jpg",
+    src: "https://images.pexels.com/photos/20035184/pexels-photo-20035184.jpeg",
     alt: "Trip 3",
     title: "Unveiling the Hills",
     description: "Discovering the hidden charms of Kodaikanal.",
