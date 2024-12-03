@@ -7,7 +7,7 @@ const munroeIslands = [
     alt: "Munroe Islands",
   },
   {
-    src: "https://www.pexels.com/photo/houseboats-20035180/",
+    src: "https://images.pexels.com/photos/20035180/pexels-photo-20035180.jpeg",
     alt: "Scenic View",
   },
   {
