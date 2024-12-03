@@ -3,7 +3,7 @@
 import Header from "./components/Header/page";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import { motion } from "framer-motion";
 
 const photos = [
@@ -28,12 +28,7 @@ const photos = [
 ];
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
 
   const handleExploreClick = () => {
     if (sectionRef.current) {
@@ -44,9 +39,6 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
       <Header />
-      <button onClick={toggleMenu}>
-        {isOpen ? "Close Menu" : "Open Menu"}
-      </button>
       <main className="flex flex-col justify-center items-center text-center py-20 px-4 sm:px-6 lg:px-8">
         <div className="mb-7 mt-12 pt-12">
           <span className="bg-black-100 px-3 py-1 border border-gray-700 rounded-full z-50">Welcome to my visual diary.</span>
