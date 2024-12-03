@@ -6,6 +6,7 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const photos = [
+  { src: "https://images.pexels.com/photos/20035182/pexels-photo-20035182.jpeg", alt: "Munroe Islands by Amit Jaison from Pexels" },
   { src: "/home/flower.jpg", alt: "Photo 1" },
   { src: "/home/scene.jpg", alt: "Photo 2" },
   { src: "/home/vala.jpg", alt: "Photo 3" },
