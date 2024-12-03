@@ -7,7 +7,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const photos = [
   { src: "https://images.pexels.com/photos/20035182/pexels-photo-20035182.jpeg", alt: "Munroe Islands by Amit Jaison from Pexels" },
-  { src: "/home/flower.jpg", alt: "Photo 1" },
+  { src: "https://images.pexels.com/photos/20035179/pexels-photo-20035179.jpeg", alt: "Photo by Amit Jaison from Pexels" },
   { src: "/home/scene.jpg", alt: "Photo 2" },
   { src: "/home/vala.jpg", alt: "Photo 3" },
 ];
