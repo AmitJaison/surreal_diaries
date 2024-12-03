@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const photos = [
   {
@@ -30,8 +30,7 @@ const photos = [
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
-  const { scrollY } = useViewportScroll();
-
+  const { scrollY } = useScroll();
   const yTransforms = photos.map((_, index) => useTransform(scrollY, [0, 1], [0, -index * 50]));
 
   const toggleMenu = () => {
