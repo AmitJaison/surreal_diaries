@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const photos = [
   {
@@ -29,7 +30,9 @@ export default function Home() {
   };
 
   const handleExploreClick = () => {
-    sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (sectionRef.current) {
+      sectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -76,11 +79,15 @@ export default function Home() {
       </main>
       <section ref={sectionRef} className="flex flex-col items-center space-y-8 p-8">
         {photos.map((photo, index) => (
-          <div
+          <motion.div
             key={index}
             className="relative w-full max-w-7xl"
             style={{ height: "auto" }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: index * 0.5 }}
           >
+            
             <Image
               className="object-cover rounded-lg"
               src={photo.src}
@@ -90,7 +97,7 @@ export default function Home() {
               height={475}
               style={{ borderRadius: "25px" }} // Adjust the border radius here
             />
-          </div>
+          </motion.div>
         ))}
       </section>
     </div>
