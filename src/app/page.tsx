@@ -4,26 +4,33 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 const photos = [
   {
     src: "https://images.pexels.com/photos/20035182/pexels-photo-20035182.jpeg",
     alt: "Munroe Islands by Amit Jaison from Pexels",
+    title: "Munroe Islands",
+    description: "A beautiful view of Munroe Islands.",
   },
   {
     src: "https://images.pexels.com/photos/20035179/pexels-photo-20035179.jpeg",
     alt: "Photo by Amit Jaison from Pexels",
+    title: "Sunset View",
+    description: "A stunning sunset captured by Amit Jaison.",
   },
   {
     src: "https://images.pexels.com/photos/20035184/pexels-photo-20035184.jpeg",
     alt: "The Raviz Hotel in Kerala in India by Amit Jaison from Pexels",
+    title: "The Raviz Hotel",
+    description: "The Raviz Hotel in Kerala, India.",
   },
 ];
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
+  const { scrollY } = useViewportScroll();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -78,27 +85,37 @@ export default function Home() {
         </div>
       </main>
       <section ref={sectionRef} className="flex flex-col items-center space-y-8 p-8">
-        {photos.map((photo, index) => (
-          <motion.div
-            key={index}
-            className="relative w-full max-w-7xl"
-            style={{ height: "auto" }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: index * 0.5 }}
-          >
-            
-            <Image
-              className="object-cover rounded-lg"
-              src={photo.src}
-              alt={photo.alt}
-              layout="responsive"
-              width={700} // You can adjust the width and height based on your image dimensions
-              height={475}
-              style={{ borderRadius: "25px" }} // Adjust the border radius here
-            />
-          </motion.div>
-        ))}
+        {photos.map((photo, index) => {
+          const y = useTransform(scrollY, [0, 1], [0, -index * 50]);
+
+          return (
+            <motion.div
+              key={index}
+              className="relative w-full max-w-7xl group mb-8" // Added mb-8 for gap
+              style={{ height: "auto", y }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: index * 0.5 }}
+            >
+              <Image
+                className="object-cover rounded-lg"
+                src={photo.src}
+                alt={photo.alt}
+                layout="responsive"
+                width={700}
+                height={475}
+                style={{ borderRadius: "25px" }}
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4 rounded-lg">
+                <h2 className="text-2xl font-bold mb-2">{photo.title}</h2>
+                <p className="mb-4">{photo.description}</p>
+                <button className="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200">
+                  Learn More
+                </button>
+              </div>
+            </motion.div>
+          );
+        })}
       </section>
     </div>
   );
