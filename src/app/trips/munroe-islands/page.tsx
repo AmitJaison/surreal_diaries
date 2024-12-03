@@ -3,8 +3,16 @@ import Image from "next/image";
 
 const munroeIslands = [
   {
-    src: "https://images.pexels.com/photos/20035182/pexels-photo-20035182.jpeg", // Replace with the actual path
+    src: "https://images.pexels.com/photos/20035182/pexels-photo-20035182.jpeg",
     alt: "Munroe Islands",
+  },
+  {
+    src: "https://images.pexels.com/photos/20035183/pexels-photo-20035183.jpeg",
+    alt: "Scenic View",
+  },
+  {
+    src: "https://images.pexels.com/photos/20035184/pexels-photo-20035184.jpeg",
+    alt: "Backwaters",
   },
 ];
 
@@ -13,7 +21,7 @@ export default function MunroeIslands() {
     <div className="min-h-screen bg-gray-200 text-white">
       <Header />
       <main className="relative flex flex-col items-center justify-center text-center py-20 px-4 sm:px-6 lg:px-8 h-screen">
-        <div className="absolute inset-0 h-screen">
+        <div className="fixed inset-0 h-screen">
           <Image
             src={munroeIslands[0].src}
             alt={munroeIslands[0].alt}
@@ -31,10 +39,36 @@ export default function MunroeIslands() {
             Experience tranquility and scenic backwaters in the heart of Kerala.
           </p>
           <button className="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600">
-            Plan Your Visit
+            Read More
           </button>
         </div>
       </main>
+      <section className="relative z-30 py-20 px-4 sm:px-6 lg:px-8 bg-black text-white">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6">Day 1: Arrival</h2>
+          <Image
+            src={munroeIslands[1].src}
+            alt={munroeIslands[1].alt}
+            width={800}
+            height={500}
+            className="mb-6"
+          />
+          <p className="text-gray-400 mb-8">
+            Placeholder text for the story of the first day. Describe the journey, the arrival, and the first impressions of Munroe Islands.
+          </p>
+          <h2 className="text-3xl font-bold mb-6">Day 2: Exploring the Backwaters</h2>
+          <Image
+            src={munroeIslands[2].src}
+            alt={munroeIslands[2].alt}
+            width={800}
+            height={500}
+            className="mb-6"
+          />
+          <p className="text-gray-400 mb-8">
+            Placeholder text for the story of the second day. Describe the activities, the scenic views, and the experiences of exploring the backwaters.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
