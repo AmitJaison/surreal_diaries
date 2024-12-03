@@ -4,7 +4,6 @@ import Header from "./components/Header/page";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const photos = [
