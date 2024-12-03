@@ -3,7 +3,6 @@
 
 import Header from "../components/Header/page";
 import Image from "next/image";
-import { useState } from "react";
 import Link from 'next/link';
 
 const trips = [
@@ -29,11 +28,6 @@ const trips = [
 ];
 
 export default function Trips() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       <Header />

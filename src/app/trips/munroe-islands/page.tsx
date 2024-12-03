@@ -1,4 +1,12 @@
 import Header from "../../components/Header/page";
+import Image from "next/image";
+
+const munroeIslands = [
+  {
+    src: "https://images.pexels.com/photos/20035182/pexels-photo-20035182.jpeg", // Replace with the actual path
+    alt: "Munroe Islands",
+  },
+];
 
 export default function MunroeIslands() {
   return (
@@ -11,10 +19,12 @@ export default function MunroeIslands() {
         <p className="text-gray-400 max-w-2xl mb-8">
           Experience tranquility and scenic backwaters in the heart of Kerala.
         </p>
-        <img
-          src="https://images.pexels.com/photos/20035182/pexels-photo-20035182.jpeg" // Replace with the actual path
-          alt="Munroe Islands"
-          className="rounded-lg shadow-lg mb-8"
+        <Image
+          src={munroeIslands[0].src}
+          alt={munroeIslands[0].alt}
+          width={800} // Adjust the width as needed
+          height={600} // Adjust the height as needed
+          className="object-cover rounded-lg mb-8"
         />
         <button className="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600">
           Plan Your Visit
