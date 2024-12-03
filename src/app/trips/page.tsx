@@ -1,25 +1,62 @@
 // src/app/trips/page.tsx
+"use client";
+
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const trips = [
-  { src: "/home/flower.jpg", alt: "Trip 1", title: "Exploring the Desert", description: "A soulful journey through Rajasthan&apos;s majestic landscapes." },
-  { src: "/home/scene.jpg", alt: "Trip 2", title: "4 States 4 Days", description: "An unforgettable journey through enchanting landscapes." },
-  { src: "/home/vala.jpg", alt: "Trip 3", title: "Unveiling the Hills", description: "Discovering the hidden charms of Kodaikanal." },
+  {
+    src: "/home/flower.jpg",
+    alt: "Trip 1",
+    title: "Exploring the Desert",
+    description:
+      "A soulful journey through Rajasthan&apos;s majestic landscapes.",
+  },
+  {
+    src: "/home/scene.jpg",
+    alt: "Trip 2",
+    title: "4 States 4 Days",
+    description: "An unforgettable journey through enchanting landscapes.",
+  },
+  {
+    src: "/home/vala.jpg",
+    alt: "Trip 3",
+    title: "Unveiling the Hills",
+    description: "Discovering the hidden charms of Kodaikanal.",
+  },
 ];
 
 export default function Trips() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       <header className="p-3 fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-7xl bg-black bg-opacity-50 backdrop-blur-md border border-gray-700 rounded-full z-50">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-2xl font-bold">Surreal Diaries</div>
-          <nav className="flex space-x-6">
-            <Link href="/" className="hover:text-gray-400">Home</Link>
-            <Link href="/trips" className="hover:text-gray-400">Trips</Link>
+          <nav
+            className={`flex space-x-6 ${isOpen ? "block" : "hidden"} sm:flex`}
+          >
+            <a href="#" className="hover:text-gray-400">
+              Stories
+            </a>
+            <a href="#" className="hover:text-gray-400">
+              Collections
+            </a>
+            <Link href="/trips" className="hover:text-gray-400">
+              Trips
+            </Link>
           </nav>
           <button className="bg-white text-black px-7 py-2 rounded-full hover:bg-gray-200">
             My Story
+          </button>
+          <button className="sm:hidden text-white" onClick={toggleMenu}>
+            {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
         </div>
       </header>
