@@ -38,7 +38,9 @@ export default function Trips() {
     <div className="min-h-screen bg-gray-900 text-white">
       <header className="p-3 fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-7xl bg-black bg-opacity-50 backdrop-blur-md border border-gray-700 rounded-full z-50">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold">Surreal Diaries</div>
+          <Link href="/" className="text-2xl font-bold">
+            Surreal Diaries
+          </Link>{" "}
           <nav
             className={`flex space-x-6 ${isOpen ? "block" : "hidden"} sm:flex`}
           >

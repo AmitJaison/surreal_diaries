@@ -6,10 +6,18 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const photos = [
-  { src: "https://images.pexels.com/photos/20035182/pexels-photo-20035182.jpeg", alt: "Munroe Islands by Amit Jaison from Pexels" },
-  { src: "https://images.pexels.com/photos/20035179/pexels-photo-20035179.jpeg", alt: "Photo by Amit Jaison from Pexels" },
-  { src: "https://images.pexels.com/photos/20035184/pexels-photo-20035184.jpeg", alt: "The Raviz Hotel in Kerala in India by Amit Jaison from Pexels" },
-  
+  {
+    src: "https://images.pexels.com/photos/20035182/pexels-photo-20035182.jpeg",
+    alt: "Munroe Islands by Amit Jaison from Pexels",
+  },
+  {
+    src: "https://images.pexels.com/photos/20035179/pexels-photo-20035179.jpeg",
+    alt: "Photo by Amit Jaison from Pexels",
+  },
+  {
+    src: "https://images.pexels.com/photos/20035184/pexels-photo-20035184.jpeg",
+    alt: "The Raviz Hotel in Kerala in India by Amit Jaison from Pexels",
+  },
 ];
 
 export default function Home() {
@@ -25,7 +33,9 @@ export default function Home() {
         style={{ borderRadius: "25px" }}
       >
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold">Surreal Diaries</div>
+          <Link href="/" className="text-2xl font-bold">
+            Surreal Diaries
+          </Link>
           <nav
             className={`flex space-x-6 ${isOpen ? "block" : "hidden"} sm:flex`}
           >
