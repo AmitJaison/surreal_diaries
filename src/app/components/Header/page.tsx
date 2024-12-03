@@ -12,7 +12,7 @@ export default function Header() {
   };
 
   return (
-    <header className="p-3 mt-4 fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-7xl bg-black bg-opacity-50 backdrop-blur-md border border-gray-700 rounded-full z-50">
+    <header className="p-3 mt-4 fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-7xl bg-black bg-opacity-50 backdrop-blur-md border border-gray-700 z-50" style={{ borderRadius: '25px' }}>
       <div className="container mx-auto flex flex-wrap justify-between items-center">
         <Link href="/" className="text-2xl font-bold">Surreal Diaries</Link>
         <nav className={`flex space-x-6 ${isOpen ? 'block' : 'hidden'} sm:flex`}>

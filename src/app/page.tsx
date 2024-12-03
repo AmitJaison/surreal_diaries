@@ -106,9 +106,17 @@ export default function Home() {
               <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
                 <h2 className="text-xl font-bold mb-2">{photo.title}</h2>
                 <p className="mb-4">{photo.description}</p>
-                <button className="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200">
-                  Learn More
-                </button>
+                {index === 0 ? (
+                  <Link href="/trips/munroe-islands">
+                    <button className="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200">
+                      Learn More
+                    </button>
+                  </Link>
+                ) : (
+                  <button className="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200">
+                    Learn More
+                  </button>
+                )}
               </div>
             </div>
           </motion.div>
