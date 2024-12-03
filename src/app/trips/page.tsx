@@ -10,9 +10,9 @@ const trips = [
   {
     src: "https://images.pexels.com/photos/20035182/pexels-photo-20035182.jpeg",
     alt: "Trip 1",
-    title: "Exploring the Desert",
+    title: "Munroe Islands",
     description:
-      "A soulful journey through Rajasthans majestic landscapes.",
+      "A beautiful view of Munroe Islands.",
   },
   {
     src: "https://images.pexels.com/photos/20035179/pexels-photo-20035179.jpeg",
