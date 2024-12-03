@@ -12,7 +12,7 @@ const trips = [
     alt: "Trip 1",
     title: "Exploring the Desert",
     description:
-      "A soulful journey through Rajasthan&apos;s majestic landscapes.",
+      "A soulful journey through Rajasthans majestic landscapes.",
   },
   {
     src: "https://images.pexels.com/photos/20035179/pexels-photo-20035179.jpeg",
