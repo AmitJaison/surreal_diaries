@@ -13,18 +13,18 @@ const photos = [
     title: "Munroe Islands",
     description: "A beautiful view of Munroe Islands.",
   },
-  {
-    src: "https://images.pexels.com/photos/20035179/pexels-photo-20035179.jpeg",
-    alt: "Photo by Amit Jaison from Pexels",
-    title: "4 States 4 Days",
-    description: "An unforgettable journey through enchanting landscapes.",
-  },
-  {
-    src: "https://images.pexels.com/photos/20035184/pexels-photo-20035184.jpeg",
-    alt: "The Raviz Hotel in Kerala in India by Amit Jaison from Pexels",
-    title: "Unveiling the Hills",
-    description: "Discovering the hidden charms of Kodaikanal.",
-  },
+  // {
+  //   src: "https://images.pexels.com/photos/20035179/pexels-photo-20035179.jpeg",
+  //   alt: "Photo by Amit Jaison from Pexels",
+  //   title: "4 States 4 Days",
+  //   description: "An unforgettable journey through enchanting landscapes.",
+  // },
+  // {
+  //   src: "https://images.pexels.com/photos/20035184/pexels-photo-20035184.jpeg",
+  //   alt: "The Raviz Hotel in Kerala in India by Amit Jaison from Pexels",
+  //   title: "Unveiling the Hills",
+  //   description: "Discovering the hidden charms of Kodaikanal.",
+  // },
 ];
 
 export default function Home() {
