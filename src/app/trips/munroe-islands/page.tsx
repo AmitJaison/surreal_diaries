@@ -78,7 +78,7 @@ export default function MunroeIslands() {
 
           <h3 className="text-2xl font-bold mb-4">The Welcome Aboard</h3>
           <p className="text-gray-400 mb-8">
-            As soon as we settled into the boat, we couldn't resist snapping
+            As soon as we settled into the boat, we couldn&apos;t resist snapping
             pictures.
           </p>
           <Image
@@ -215,12 +215,12 @@ export default function MunroeIslands() {
 
           <p className="text-gray-400 mb-8">
             We also spotted a <strong>thonikaaran (boatman)</strong> and a
-            majestic <strong>crane skimming the water’s surface</strong>,
+            majestic <strong>crane skimming the water&apos;s surface</strong>,
             hunting for fish.
           </p>
           <Image
             src={munroeIslands[2].src}
-            alt="Crane skimming the water's surface"
+            alt="Crane skimming the water&apos;s surface"
             width={800}
             height={500}
             className="mb-6"
