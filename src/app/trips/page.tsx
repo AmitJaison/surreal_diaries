@@ -1,4 +1,3 @@
-// src/app/trips/page.tsx
 "use client";
 
 import Header from "../components/Header/page";
@@ -46,23 +45,17 @@ const gradientVariants = {
 
 export default function Trips() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-gray-900 text-white flex flex-col justify-center items-center">
       <Header />
-      <main className="flex flex-col justify-center items-center text-center py-20 px-4 sm:px-6 lg:px-8">
+      <main className="flex flex-col justify-center items-center text-center py-20 px-4 sm:px-6 lg:px-8 min-h-screen">
         <motion.h1
-          className="text-3xl sm:text-5xl font-bold mb-4"
+          className="text-3xl sm:text-5xl font-bold mb-8 bg-gradient-to-r from-gray-300 via-gray-500 to-gray-700 bg-clip-text text-transparent"
           variants={gradientVariants}
           animate="animate"
-          style={{
-            background: "linear-gradient(90deg, #ff7e5f, #feb47b, #ff7e5f)",
-            backgroundSize: "200% 200%",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
         >
           Discover my adventures and travels
         </motion.h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="w-full max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {trips.map((trip, index) => (
             <motion.div
               key={index}
@@ -71,6 +64,7 @@ export default function Trips() {
               animate="visible"
               variants={cardVariants}
               transition={{ duration: 0.5, delay: index * 0.2 }}
+              style={{ borderRadius: '25px' }}
             >
               <div className="relative w-full h-48 mb-4">
                 <Image
