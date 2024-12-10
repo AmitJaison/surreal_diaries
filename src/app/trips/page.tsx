@@ -4,6 +4,7 @@
 import Header from "../components/Header/page";
 import Image from "next/image";
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const trips = [
   {
@@ -27,19 +28,50 @@ const trips = [
   },
 ];
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
+
+const gradientVariants = {
+  animate: {
+    backgroundPosition: ["0% 50%", "100% 50%"],
+    transition: {
+      duration: 5,
+      repeat: Infinity,
+      repeatType: "reverse" as const,
+    },
+  },
+};
+
 export default function Trips() {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       <Header />
       <main className="flex flex-col justify-center items-center text-center py-20 px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl sm:text-5xl font-bold mb-4">
-          <span className="block bg-gradient-to-r from-gray-300 via-gray-500 to-gray-700 bg-clip-text text-transparent">
-            Discover my adventures and travels
-          </span>
-        </h1>
+        <motion.h1
+          className="text-3xl sm:text-5xl font-bold mb-4"
+          variants={gradientVariants}
+          animate="animate"
+          style={{
+            background: "linear-gradient(90deg, #ff7e5f, #feb47b, #ff7e5f)",
+            backgroundSize: "200% 200%",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
+        >
+          Discover my adventures and travels
+        </motion.h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {trips.map((trip, index) => (
-            <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <motion.div
+              key={index}
+              className="bg-gray-800 p-6 rounded-lg shadow-lg"
+              initial="hidden"
+              animate="visible"
+              variants={cardVariants}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+            >
               <div className="relative w-full h-48 mb-4">
                 <Image
                   className="object-cover rounded-lg"
@@ -59,7 +91,7 @@ export default function Trips() {
                   Let&apos;s Travel
                 </button>
               )}
-            </div>
+            </motion.div>
           ))}
         </div>
       </main>
