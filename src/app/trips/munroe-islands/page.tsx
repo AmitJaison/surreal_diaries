@@ -235,7 +235,7 @@ export default function MunroeIslands() {
                 <h2 className="text-3xl font-serif text-white mb-6">Traditional Fishing</h2>
                 <p className="text-gray-300 text-lg leading-relaxed">
                   We witnessed the traditional Chinese fishing nets (Cheenavala) in action,
-                  a testament to the area's rich fishing heritage.
+                  a testament to the area&apos;s rich fishing heritage.
                 </p>
               </div>
             </div>
