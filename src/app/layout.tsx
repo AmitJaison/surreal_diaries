@@ -1,22 +1,30 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
+import type { Metadata, Viewport } from "next";
+import { Cormorant_Garamond, Instrument_Sans } from "next/font/google";
 import "./globals.css";
-// import { SpeedInsights } from "@vercel/speed-insights/next"
+import Navigation from "@/components/Navigation";
+import { clsx } from "clsx";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const instrument = Instrument_Sans({
+  variable: "--font-instrument",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Surreal Personal Diaries",
-  description: "Enter my world of photographs — every frame holds a cherished memory.",
+  title: "Amit Jaison | Frontend Engineer & Photographer",
+  description: "Portfolio of Amit Jaison - showcasing front-end projects, visual stories, and thoughts on design & tech.",
+  keywords: ["Front-end Engineer", "Photographer", "Storyteller", "React", "Next.js", "Portfolio"],
+};
+
+export const viewport: Viewport = {
+  themeColor: "#F5F3EF",
 };
 
 export default function RootLayout({
@@ -26,9 +34,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={clsx(cormorant.variable, instrument.variable, "antialiased")}>
+        <Navigation />
         {children}
       </body>
     </html>
