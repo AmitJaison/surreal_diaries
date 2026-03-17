@@ -10,8 +10,7 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.background}>
         <Image 
-          src="/IMG_20210606_173849_Original.jpg"
-          // Original: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2500&auto=format&fit=crop" 
+          src="/hero-sunset.jpg"
           alt="Atmospheric landscape"
           fill
           priority
