@@ -12,41 +12,41 @@ const tripData: Record<string, any> = {
     title: "Exploring the Beauty of Munroe Islands",
     location: "Kerala, India",
     year: "2024",
-    heroImage: "https://images.pexels.com/photos/20035182/pexels-photo-20035182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    heroImage: "/trip-munroe.jpg",
     intro: "On 26th January 2024, we embarked on a memorable one-day trip from Trivandrum to the breathtaking backwaters of Ashtamudi Lake and Munroe Islands. It was a group of nine of us, full of excitement and anticipation. The serene backwaters welcomed us as we began our journey.",
     story: [
       { type: "text", content: "While cruising, the crew shared fascinating tales about the region. We passed by several landmarks including the magnificent Leela Raviz Ashtamudi, a luxury hotel standing tall by the serene waters." },
-      { type: "image", src: "https://images.pexels.com/photos/29717068/pexels-photo-29717068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", caption: "Cruising through the mangroves." },
+      { type: "image", src: "/munroe-mangrove.jpg", caption: "Cruising through the mangroves." },
       { type: "text", content: "The highlight of our journey was the authentic Kerala cuisine. We were served the famous Karimeen (Pearl Spot) and traditional kappa (tapioca) with fish curry." },
-      { type: "image", src: "https://images.pexels.com/photos/20035184/pexels-photo-20035184.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", caption: "Reflections on the Ashtamudi Lake." },
+      { type: "image", src: "/munroe-food.jpg", caption: "Traditional Kerala cuisine on the boat." },
       { type: "text", content: "One of the most exciting parts was exploring the dense mangrove forests. We took a smaller boat that brought us closer to nature, allowing us to appreciate the intricate ecosystem of the backwaters." },
-      { type: "image", src: "https://images.pexels.com/photos/20035180/pexels-photo-20035180.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", caption: "Sunset hues over the water." },
+      { type: "image", src: "/munroe-island.jpg", caption: "Mangrove island on Ashtamudi Lake." },
       { type: "text", content: "We witnessed the traditional Chinese fishing nets (Cheenavala) in action, a testament to the area's rich fishing heritage." },
-      { type: "image", src: "https://images.pexels.com/photos/20035179/pexels-photo-20035179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", caption: "Traditional Chinese fishing nets." },
+      { type: "image", src: "/munroe-fishnet.jpg", caption: "Traditional Chinese fishing nets." },
       { type: "text", content: "After a delicious lunch on the boat, we started our journey back, soaking in the beauty of the landscapes one last time. As the boat docked back at the jetty, we carried home not just memories but a profound sense of tranquility from the serene backwaters of Ashtamudi." },
-      { type: "image", src: "https://images.pexels.com/photos/29717069/pexels-photo-29717069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", caption: "Serene waters." },
+      { type: "image", src: "/munroe-sunset.jpg", caption: "Sunset over the backwaters." },
       { type: "gallery", images: [
-         "https://images.pexels.com/photos/29717066/pexels-photo-29717066.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-         "https://images.pexels.com/photos/29717076/pexels-photo-29717076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-         "https://images.pexels.com/photos/29717075/pexels-photo-29717075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-         "https://images.pexels.com/photos/29717070/pexels-photo-29717070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-         "https://images.pexels.com/photos/29717067/pexels-photo-29717067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-         "https://images.pexels.com/photos/29717071/pexels-photo-29717071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-         "https://images.pexels.com/photos/29717074/pexels-photo-29717074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-         "https://images.pexels.com/photos/20035181/pexels-photo-20035181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+         "/gallery-1.jpg",
+         "/gallery-2.jpg",
+         "/gallery-3.jpg",
+         "/gallery-4.jpg",
+         "/gallery-5.jpg",
+         "/gallery-6.jpg",
+         "/gallery-7.jpg",
+         "/gallery-8.jpg"
       ]}
     ],
     tech: "This page uses dynamic routing and Framer Motion to seamlessly transition between the grid view and this detailed narrative."
   },
-  "vagamon-2023": {
-    title: "Highland Mists",
-    location: "Vagamon, Kerala",
-    year: "2023",
-    heroImage: "/IMG_1437_Original.jpg",
-    intro: "A journey through the rolling hills and misty meadows of Vagamon. The cool mountain air and lush greenery provided a perfect escape into nature.",
+  "bonacaud-2025": {
+    title: "Into the Mist",
+    location: "Bonacaud, Kerala",
+    year: "2025",
+    heroImage: "/trip-bonacaud.jpg",
+    intro: "A ride into the misty hills of Bonacaud, where clouds cling to cliff faces and the road winds through dense forest. The monsoon-drenched Western Ghats at their most dramatic.",
     story: [
-      { type: "image", src: "/IMG_1437_Original.jpg", caption: "Misty rolling hills of Vagamon." },
-      { type: "text", content: "Vagamon is a hill station located in Peerumade taluk of Idukki district of Kerala, India. It is a place of inexplicable beauty." }
+      { type: "image", src: "/trip-bonacaud.jpg", caption: "Misty cliffs of Bonacaud." },
+      { type: "text", content: "Bonacaud sits deep in the Western Ghats near Thiruvananthapuram, a remote hill station surrounded by tea estates and dense tropical forest." }
     ],
     tech: "Photography showcase."
   },
@@ -54,23 +54,23 @@ const tripData: Record<string, any> = {
     title: "Golden Hour Shores",
     location: "Varkala, India",
     year: "2022",
-    heroImage: "/IMG_1828_Original.jpg",
-    intro: "witnessing the stunning cliffs meeting the Arabian Sea. Varkala offers a unique blend of geological marvels and beachside tranquility.",
+    heroImage: "/trip-varkala.jpg",
+    intro: "Witnessing the stunning cliffs meeting the Arabian Sea. Varkala offers a unique blend of geological marvels and beachside tranquility.",
     story: [
-      { type: "image", src: "/IMG_1828_Original.jpg", caption: "Golden hour at Varkala Beach." },
+      { type: "image", src: "/trip-varkala.jpg", caption: "Golden hour at Varkala Beach." },
       { type: "text", content: "Varkala is the only place in southern Kerala where cliffs are found adjacent to the Arabian Sea." }
     ],
     tech: "Photography showcase."
   },
-  "munnar-2021": {
+  "ponmudi-2025": {
     title: "Mountain Solitude",
-    location: "Munnar, India",
-    year: "2021",
-    heroImage: "/IMG_2520_Original.jpg",
-    intro: "Exploring the tea plantations and serene landscapes of Munnar. A testament to nature's ability to sculpt breathtaking vistas.",
+    location: "Ponmudi, Kerala",
+    year: "2025",
+    heroImage: "/trip-ponmudi.jpg",
+    intro: "A motorcycle ride to the summit of Ponmudi, where the Western Ghats unfold in layers of green beneath moody skies. The winding ghat road and panoramic viewpoints made for an unforgettable journey.",
     story: [
-      { type: "image", src: "/IMG_2520_Original.jpg", caption: "Scenic tea gardens of Munnar." },
-      { type: "text", content: "Munnar rises as three mountain streams merge  - Mudrapuzha, Nallathanni and Kundala." }
+      { type: "image", src: "/trip-ponmudi.jpg", caption: "Bikes lined up at the Ponmudi viewpoint." },
+      { type: "text", content: "Ponmudi, meaning 'Golden Peak', is a hill station in Thiruvananthapuram district known for its hairpin bends and stunning mountain vistas." }
     ],
     tech: "Photography showcase."
   },

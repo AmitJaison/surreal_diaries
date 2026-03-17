@@ -12,7 +12,7 @@ const projects = [
     title: "E-Commerce Analytics",
     description: "A comprehensive dashboard for online retailers with real-time data visualization.",
     tags: ["React", "Next.js", "D3.js"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+    image: "/work-1.jpg",
     slug: "ecommerce-dashboard",
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     title: "Travel Journal",
     description: "Interactive map-based journaling app allowing users to pin locations and attach memories.",
     tags: ["Mapbox", "Node.js", "MongoDB"],
-    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1000&auto=format&fit=crop",
+    image: "/work-2.jpg",
     slug: "travel-journal",
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     title: "Design System Kit",
     description: "A reusable component library built with accessibility and flexibility in mind.",
     tags: ["Storybook", "A11y", "CSS Modules"],
-    image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=1000&auto=format&fit=crop",
+    image: "/work-3.jpg",
     slug: "ui-kit",
   },
   {
@@ -36,7 +36,7 @@ const projects = [
     title: "Fintech Dashboard",
     description: "Financial planning tool for millennials with budget tracking and investment insights.",
     tags: ["Vue.js", "Firebase", "Chart.js"],
-    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1000&auto=format&fit=crop",
+    image: "/work-4.jpg",
     slug: "fintech-dashboard",
   },
   {
@@ -44,7 +44,7 @@ const projects = [
     title: "Art Gallery Portfolio",
     description: "Minimalist portfolio for a contemporary artist with immersive gallery view.",
     tags: ["Gatsby", "GraphQL", "Sanity"],
-    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=1000&auto=format&fit=crop",
+    image: "/work-5.jpg",
     slug: "art-gallery",
   },
   {
@@ -52,7 +52,7 @@ const projects = [
     title: "Health Tracker App",
     description: "Mobile-first web app for tracking daily habits and wellness metrics.",
     tags: ["PWA", "React Native", "Redux"],
-    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1000&auto=format&fit=crop",
+    image: "/work-6.jpg",
     slug: "health-tracker",
   },
 ];
